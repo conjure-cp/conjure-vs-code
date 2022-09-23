@@ -1,0 +1,25 @@
+{
+  "name": "conjure-vs-code",
+  "displayName": "conjure-vs-code",
+  "description": "VS Code extension for conjure",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "essence",
+      "aliases": ["Essence", "essence"],
+      "extensions": [".essence",".param",".essenceprime"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "essence",
+      "scopeName": "source.essence",
+      "path": "./syntaxes/essence.tmLanguage.json"
+    }]
+  }
+}
