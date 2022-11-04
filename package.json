@@ -1,25 +1,58 @@
 {
   "name": "conjure-vs-code",
   "displayName": "conjure-vs-code",
+  "main": "./out/extension",
   "description": "VS Code extension for conjure",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.71.0"
+    "vscode": "^1.73.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "activationEvents": ["onLanguage:essence"],
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./"
+  },
   "contributes": {
-    "languages": [{
-      "id": "essence",
-      "aliases": ["Essence", "essence"],
-      "extensions": [".essence",".param",".essenceprime"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "essence",
-      "scopeName": "source.essence",
-      "path": "./syntaxes/essence.tmLanguage.json"
-    }]
+    "commands": [
+      {
+        "command": "NEED MORE ESSENCE",
+        "shortTitle": "Essenz",
+        "title": "ESZENCSE"
+      }
+    ],
+    "languages": [
+      {
+        "id": "essence",
+        "aliases": [
+          "Essence",
+          "essence"
+        ],
+        "extensions": [
+          ".essence",
+          ".param"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "essence",
+        "scopeName": "source.essence",
+        "path": "./syntaxes/essence.tmLanguage.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "typescript": "^4.8.4",
+    "vscode": "^1.1.37",
+    "vscode-languageclient": "^8.0.2"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.73.0",
+    "@types/node": "^18.11.9",
+    "typescript": "^4.8.4"
   }
 }
