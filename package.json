@@ -16,12 +16,27 @@
     "compile": "tsc -watch -p ./"
   },
   "contributes": {
-    "commands": [
+    "configuration":[
       {
-        "command": "NEED MORE ESSENCE",
-        "shortTitle": "Essenz",
-        "title": "ESZENCSE"
+        "title": "Conjure",
+        "properties": {
+          "conjure.executablePath":{
+              "type":"string",
+              "default":"",
+              "description": "Path to the conjure executable, if blank, try to find conjure on PATH"
+          }
+        }
+      },
+      {
+        "title": "Essence",
+        "properties": {}
+      },
+      {
+        "title": "Solvers",
+        "properties": {}
       }
+    ],
+    "commands": [
     ],
     "languages": [
       {
