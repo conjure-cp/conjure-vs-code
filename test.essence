@@ -8,11 +8,56 @@ find y : E2
 find z : E2(a..c)
 find t : E2(b,d)
 
-such that y = z, z = t
-letting x be {1,2    3,4}
-given x : int(1..4)
+letting longname be 40
+letting x be domain function (injective,surjective) int --> int
 
-letting subject 5
-find : 4
+such that y = z, z = t
+
+
+letting x,y,z,a,b,
+        c,d,e,e,x 
+        be {1,2    3,4}
+given x : int(1..4)
+letting subject be 5
+find x : 4
+
 find k : E2
+
 such that k = max(`E2`)
+
+
++
+-
+*
+/
+%
+**
+factorial
+=
+!=
+<
+<=
+>
+>=
+/\
+\/
+->
+<->
+!
+-->
+:
+::
+@
+>=lex
+>lex
+<=lex
+<lex
+|
+`
+.
+..
+,
+;
+
+
+    , 
