@@ -34,7 +34,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.essence",
-				"match": "\\b(letting|such|that|given|find|be|new|type|enum|domain|in|\\.|\\.\\.)\\b"
+				"match": "\\b(letting|such|that|given|find|be|new|type|enum|domain|in|indexed|of|by|\\.|\\.\\.)\\b"
 			},
 			{
 				"name": "keyword.control.essence",
@@ -77,6 +77,11 @@
 					"comments":"->,<->,!,-->,:,::",
 					"name": "keyword.operator",
 					"match": "(\\->|<\\->|!|\\-\\->|:|::)"
+				},
+				{
+					"comments":"comps",
+					"name": "keyword.operator",
+					"match": "\\b(forAll|sum|product|xor)\\b"
 				}
 				
 			]	
