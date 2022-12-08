@@ -15,7 +15,7 @@
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -watch -p ./"
   },
-  "contributes": {
+   "contributes": {
     "commands": [
       {
         "command": "NEED MORE ESSENCE",
@@ -32,7 +32,8 @@
         ],
         "extensions": [
           ".essence",
-          ".param"
+          ".param",
+          ".solution"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -41,7 +42,25 @@
       {
         "language": "essence",
         "scopeName": "source.essence",
-        "path": "./syntaxes/essence.tmLanguage.json"
+        "path": "./syntaxes/essence.tmLanguage.json"  
+      }
+    ],
+    "configurationDefaults": {
+      "[essence]": {
+        "editor.semanticHighlighting.enabled": true
+      }
+    },
+    "semanticTokenScopes": [
+      {
+        "language": "essence",
+        "scopes": {
+          "type.defaultLibrary":["storage.type"],
+          "macro":["keyword.other.unit"],
+          "regexp":["constant.language.bool"],
+          "modifier":["emphasis","storage.type"],
+          "*.readonly":["emphasis"],
+          "*.abstract":["strong"]
+        }
       }
     ]
   },
