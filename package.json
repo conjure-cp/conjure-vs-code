@@ -10,18 +10,15 @@
   "categories": [
     "Programming Languages"
   ],
-  "activationEvents": ["onLanguage:essence"],
+  "activationEvents": [
+    "onLanguage:essence"
+  ],
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -watch -p ./"
   },
-   "contributes": {
+  "contributes": {
     "commands": [
-      {
-        "command": "NEED MORE ESSENCE",
-        "shortTitle": "Essenz",
-        "title": "ESZENCSE"
-      }
     ],
     "languages": [
       {
@@ -42,7 +39,7 @@
       {
         "language": "essence",
         "scopeName": "source.essence",
-        "path": "./syntaxes/essence.tmLanguage.json"  
+        "path": "./syntaxes/essence.tmLanguage.json"
       }
     ],
     "configurationDefaults": {
@@ -54,24 +51,37 @@
       {
         "language": "essence",
         "scopes": {
-          "type.defaultLibrary":["storage.type"],
-          "macro":["keyword.other.unit"],
-          "regexp":["constant.language.bool"],
-          "modifier":["emphasis","storage.type"],
-          "*.readonly":["emphasis"],
-          "*.abstract":["strong"]
+          "type.defaultLibrary": [
+            "storage.type"
+          ],
+          "macro": [
+            "keyword.other.unit"
+          ],
+          "regexp": [
+            "constant.language.bool"
+          ],
+          "modifier": [
+            "emphasis",
+            "storage.type"
+          ],
+          "*.readonly": [
+            "emphasis"
+          ],
+          "*.abstract": [
+            "strong"
+          ]
         }
       }
     ]
   },
   "dependencies": {
-    "typescript": "^4.8.4",
-    "vscode": "^1.1.37",
+    "compare-versions": "^5.0.1",
+    "vscode": "^1.1.34",
     "vscode-languageclient": "^8.0.2"
   },
   "devDependencies": {
-    "@types/vscode": "^1.73.0",
     "@types/node": "^18.11.9",
-    "typescript": "^4.8.4"
+    "@types/vscode": "^1.73.0",
+    "typescript": "^4.9.4"
   }
 }
