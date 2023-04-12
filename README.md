@@ -1,9 +1,10 @@
 # conjure-vs-code
-VS Code extension for Conjure
+VS Code extension for Conjure and the Essence Language
 
 # conjure-vs-code README
 
 An extension providing features aiding the development of constraint models using Conjure. 
+
 Currently the only feature is enabling language support for Essence.
 
 ## Features

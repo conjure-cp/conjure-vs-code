@@ -8,7 +8,7 @@
     "type": "git"
   },
   "description": "VS Code extension for conjure",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -31,11 +31,6 @@
       {
         "language": "essence",
         "path": "./snippets/essenceSnippets.json"
-      }
-    ],
-    "debuggers": [
-      {
-        "type": ""
       }
     ],
     "languages": [
@@ -88,6 +83,24 @@
           "*.abstract": [
             "strong"
           ]
+        }
+      }
+    ],
+    "configuration":[
+      {
+        "title": "Conjure",
+        "properties": {
+          "conjure.executable":{
+            "type" : "string",
+            "default":"",
+            "description": "Conjure executable, if on PATH can be left blanl"
+          },
+          "conjure.overrideVersionCheck":{
+            "type":"boolean",
+            "default" : false,
+            "description": "Debug only, ignore version check",
+            "deprecationMessage": "Should only be used for testing. If version detection is broken please raise an issue"
+          }
         }
       }
     ]

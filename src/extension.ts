@@ -11,6 +11,7 @@ import {
   ServerOptions,
   TransportKind
 } from 'vscode-languageclient/node';
+import { vscode } from 'vscx';
 
 export function activate(context:ExtensionContext){
     tryStartLanguageServer(context);
@@ -25,8 +26,11 @@ function tryStartLanguageServer (context:ExtensionContext){
         return
     }
     if(!satisfies(conjureVersion,">2.4.0")){
-        window.showErrorMessage(`The installed version of Conjure ${conjureVersion} predates LSP support, plese update to use these features`)
-        return 
+        window.showErrorMessage(`The installed version of Conjure (${conjureVersion}) predates LSP support, plese update to use these features`)
+        if(!vscode.workspace.getConfiguration("conjure").get("overrideVersionCheck",false)){
+            return    
+        }
+        
     }
     window.showInformationMessage(`Found Conjure v${conjureVersion}`)
     let serverOptions: ServerOptions = {
