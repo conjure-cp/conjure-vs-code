@@ -26,8 +26,7 @@ function tryStartLanguageServer (context:ExtensionContext){
     }
     if(!satisfies(conjureVersion,">2.4.0")){
         window.showErrorMessage(`The installed version of Conjure ${conjureVersion} predates LSP support, plese update to use these features`)
-        //ommited as LSP support isn't official yet
-        //return 
+        return 
     }
     window.showInformationMessage(`Found Conjure v${conjureVersion}`)
     let serverOptions: ServerOptions = {

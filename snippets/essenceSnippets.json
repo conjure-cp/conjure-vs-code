@@ -1,0 +1,6 @@
+{
+    "forAll" :{
+        "prefix":["forall","for","forAll"],
+        "body":["forAll ${2:pattern} in ${1:domain} .","\t$0"]
+    }
+}
