@@ -8,7 +8,7 @@
     "type": "git"
   },
   "description": "VS Code extension for conjure",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -24,7 +24,7 @@
     "esbuild": "npm run esbuild-base -- --sourcemap",
     "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
     "test-compile": "tsc -p ./",
-    "test" : "echo success",
+    "test": "echo success",
     "deploy": "vsce publish"
   },
   "contributes": {
