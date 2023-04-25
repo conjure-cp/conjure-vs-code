@@ -8,7 +8,7 @@
     "type": "git"
   },
   "description": "VS Code extension for conjure",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -24,7 +24,7 @@
     "esbuild": "npm run esbuild-base -- --sourcemap",
     "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
     "test-compile": "tsc -p ./",
-    "deploy" : "vsce publish"
+    "deploy": "vsce publish"
   },
   "contributes": {
     "snippets": [
@@ -86,18 +86,18 @@
         }
       }
     ],
-    "configuration":[
+    "configuration": [
       {
         "title": "Conjure",
         "properties": {
-          "conjure.executable":{
-            "type" : "string",
-            "default":"",
+          "conjure.executable": {
+            "type": "string",
+            "default": "",
             "description": "Conjure executable, if on PATH can be left blanl"
           },
-          "conjure.overrideVersionCheck":{
-            "type":"boolean",
-            "default" : false,
+          "conjure.overrideVersionCheck": {
+            "type": "boolean",
+            "default": false,
             "description": "Debug only, ignore version check",
             "deprecationMessage": "Should only be used for testing. If version detection is broken please raise an issue"
           }
