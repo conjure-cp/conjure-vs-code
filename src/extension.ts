@@ -50,20 +50,23 @@ function tryStartLanguageServer (context:ExtensionContext){
 }
 function checkConjureVersion():string|undefined{
     try {
-        let result = execSync("conjure --version",{timeout:100,windowsHide:true,encoding:"utf-8"})
+        let result = execSync("conjure --version",{timeout:500,windowsHide:true,encoding:"utf-8"})
         let pattern = /Release version (\d+\.\d+\.\d+)/g
         if(!result.startsWith("Conjure: The Automated Constraint Modelling Tool")){
+            window.showWarningMessage("Found some conjure on they system but it's not the right one")
             console.error("This is not the conjure we were looking for...");
             return undefined
         }
         let match = pattern.exec(result)
         if(match==null){
+            window.showWarningMessage(`Couldn't get version number from : ${result}`)
             console.error(`Couldn't get version number from : ${result}`)
             return undefined
         }
         return match[1]
 
     } catch (error) {
+        window.showErrorMessage(`Failed to start exectuable conjure. \n Got error ${error}`)
         console.error(`Got error : ${error}`)
         return undefined
     }
