@@ -25,7 +25,7 @@ function tryStartLanguageServer (context:ExtensionContext){
         window.showErrorMessage(`Couldn't launch Conjure, please check it is on PATH`);
         return
     }
-    if(!satisfies(conjureVersion,">2.4.0")){
+    if(!satisfies(conjureVersion,">=2.5.0")){
         window.showErrorMessage(`The installed version of Conjure (${conjureVersion}) predates LSP support, plese update to use these features`)
         if(!vscode.workspace.getConfiguration("conjure").get("overrideVersionCheck",false)){
             return    
