@@ -19,3 +19,14 @@ Currently the only feature is enabling language support for Essence.
 ## Requirements
 
 LSP support will be added to conjure in version 2.5.0 (as yet unreleased) If your conjure version is older than this, language support will be limited. The most recent release can be found at: https://github.com/conjure-cp/conjure/
+
+
+## Making a release
+
+- `npm version major/minor/patch`
+- `git push origin main --tags`
+
+
+## Dev notes
+
+- `npm install` installs dependencies
