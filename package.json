@@ -95,7 +95,7 @@
           "conjure.executable": {
             "type": "string",
             "default": "",
-            "description": "Conjure executable, if on PATH can be left blanl"
+            "description": "Conjure executable, if on PATH can be left blank"
           },
           "conjure.overrideVersionCheck": {
             "type": "boolean",

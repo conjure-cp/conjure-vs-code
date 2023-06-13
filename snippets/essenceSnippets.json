@@ -1,6 +1,24 @@
 {
-    "forAll" :{
-        "prefix":["forall","for","forAll"],
-        "body":["forAll ${2:pattern} in ${1:domain} .","\t$0"]
+    "forAll": {
+        "prefix": [
+            "forall",
+            "for",
+            "forAll"
+        ],
+        "body": [
+            "forAll ${2:pattern} : ${1:domain} .",
+            "forAll ${2:pattern} in ${1:expression} .",
+            "\t$0"
+        ]
+    },
+    "exists": {
+        "prefix": [
+            "exists"
+        ],
+        "body": [
+            "exists ${2:pattern} : ${1:domain} .",
+            "exists ${2:pattern} in ${1:expression} .",
+            "\t$0"
+        ]
     }
 }
