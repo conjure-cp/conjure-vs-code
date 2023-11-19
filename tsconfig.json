@@ -2,12 +2,14 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "ES6",
-		"outDir": "./out",
+        "outDir": "./out",
         "baseUrl": "./src",
         "skipLibCheck": true
     },
     "exclude": [
         "node_modules"
     ],
-    "include": ["src/**/*"],
+    "include": [
+        "src/**/*"
+    ],
 }

@@ -50,7 +50,7 @@ function tryStartLanguageServer(context: ExtensionContext) {
 }
 function checkConjureVersion(): string | undefined {
     try {
-        let result = execSync("conjure --version", { timeout: 500, windowsHide: true, encoding: "utf-8" })
+        let result = execSync("conjure --version", { timeout: 5000, windowsHide: true, encoding: "utf-8" })
         let pattern = /Release version (\d+\.\d+\.\d+)/g
         if (!result.startsWith("Conjure: The Automated Constraint Modelling Tool")) {
             window.showWarningMessage("Found some conjure on they system but it's not the right one")
