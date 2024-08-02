@@ -109,17 +109,17 @@
   },
   "dependencies": {
     "@types/typescript": "^2.0.0",
-    "compare-versions": "^6.1.0",
+    "compare-versions": "^6.1.1",
     "g": "^2.0.1",
     "vscode-languageclient": "^9.0.1",
     "vscx": "^0.3.29"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
-    "@types/vscode": "^1.90.0",
-    "@vscode/vsce": "^2.29.0",
-    "esbuild": "^0.22.0",
-    "typescript": "^5.5.3",
+    "@types/node": "^22.0.2",
+    "@types/vscode": "^1.92.0",
+    "@vscode/vsce": "^2.31.1",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.4",
     "vscode": "^1.1.34"
   }
 }
