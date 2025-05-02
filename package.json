@@ -115,11 +115,11 @@
     "vscx": "^0.3.29"
   },
   "devDependencies": {
-    "@types/node": "^22.13.17",
-    "@types/vscode": "^1.98.0",
+    "@types/node": "^22.15.3",
+    "@types/vscode": "^1.99.1",
     "@vscode/vsce": "^3.3.2",
-    "esbuild": "^0.25.2",
-    "typescript": "^5.8.2",
+    "esbuild": "^0.25.3",
+    "typescript": "^5.8.3",
     "vscode": "^1.1.34"
   }
 }
