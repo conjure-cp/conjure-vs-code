@@ -111,15 +111,15 @@
     "@types/typescript": "^2.0.0",
     "compare-versions": "^6.1.1",
     "g": "^2.0.1",
-    "vscode-languageclient": "^9.0.1",
+    "vscode-languageclient": "^10.1.0",
     "vscx": "^0.3.29"
   },
   "devDependencies": {
-    "@types/node": "^22.15.29",
-    "@types/vscode": "^1.100.0",
-    "@vscode/vsce": "^3.4.2",
-    "esbuild": "^0.25.5",
-    "typescript": "^5.8.3",
+    "@types/node": "^26.1.0",
+    "@types/vscode": "^1.125.0",
+    "@vscode/vsce": "^3.9.2",
+    "esbuild": "^0.28.1",
+    "typescript": "^6.0.3",
     "vscode": "^1.1.34"
   }
 }
